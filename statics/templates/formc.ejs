@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover,
+a.active {
+  color: rgb(250, 106, 39);
+  font-size: 19px;
+}
+
+.topnav .icon {
+  display: none;
+}
+#wbnm {
+  color: rgb(250, 106, 39);
+  font-size: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    width: 100%;
+  }
+  .topnav.responsive {
+    position: fixed;
+    width: 100%;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: rgb(250, 106, 39);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-left: 400px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: black;
+  color: rgb(250, 106, 39);
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+h1 {
+  font-family: "Sofia";
+  color: rgb(250, 106, 39);
+}
+form {
+  margin-top: 50px;
+}
+button{
+    margin-left: 30%;
+}
+    </style>
+</head>
+<body>
+    <form action="/uploaddddc" method="POST">
+        id:<input type="text" name="t0" value="<%=data[0].id %>" ></br>
+        <label for="uname"><b>Batch</b></label>
+        <input type="text" placeholder="Enter Batch Name" value="<%= data[0].batch %>" name="t1" requ
+        ired></br>
+        <label for="uname"><b>course</b></label>
+        <input type="text" placeholder="about course..." value="<%= data[0].course %>" name="t3" required></br>
+        <label for="uname"><b>duration</b></label>
+        <input type="text" placeholder="Enter duration" value="<%= data[0].duration %>" name="t4" required></br>
+        <label for="uname"><b>frequency</b></label>
+        <input type="text" placeholder="Enter frequency" value="<%= data[0].frequency %>" name="t5" required></br>
+        <label for="uname"><b>seats</b></label>
+        <input type="text" placeholder="Enter seats" value="<%= data[0].seats %>" name="t6" required></br>
+        <label for="uname"><b>commencement</b></label>
+        <input type="text" placeholder="Enter commencement" value="<%= data[0].commencement %>" name="t7" required></br>
+  
+        <button type="submit"> ok</button></form>
+</body>
+</html>

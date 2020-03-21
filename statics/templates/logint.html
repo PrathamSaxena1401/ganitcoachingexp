@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="/" id="wbnm">///Ganit</a>
+      <a href="/#bannn">Home</a>
+      <a href="/#abt">About</a>
+      <a href="/#tm">Faculty</a>
+      <a href="/#ban2">Team</a>
+
+      <a href="/cour">Courses</a>
+      <a href="#about">Result</a>
+
+      <a href="/lg" style="float: right;">Login</a>
+      <a href="/sgn" style="float: right;">Signup</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <h2>Login Form</h2>
+
+    <form action="/cct" method="post">
+      <div class="imgcontainer">
+        <img src="../images/p2.jpeg" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="us" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+    <footer class="page-footer">
+      <div class="contain" id="content">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text" style="color: rgb(250, 106, 39);"><h4 style="color: rgb(250, 106, 39);" >Ganit</h4> <br/><h5 style="color:rgb(250, 106, 39);">An Institute of Mathematics</h5></h5>
+            <p class="grey-text text-lighten-4"style="color: rgb(250, 106, 39);">70/1,Kailash Tower,Near Miss Hill School,Padav, MLB Colony,Lashkar,Gwalior, (M.P.)</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text" style="color: rgb(250, 106, 39);">Links</h5>
+            <ul class="footli"><a class="grey-text text-lighten-3" href="https://www.facebook.com/ganitinstitute/">Our facebook page</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.google.com/gmail/">ganitinstituteformathematics@gmail.com</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">7415545514, 6263679193, 9826558350</a></li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="contain">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="/lga">More Links</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover,
+      a.active {
+        color: rgb(250, 106, 39);
+        font-size: 19px;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+      #wbnm {
+        color: rgb(250, 106, 39);
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+          margin-right: 0px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav {
+          width: 100%;
+        }
+        .topnav.responsive {
+          position: fixed;
+          width: 100%;
+        }
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: black;
+        color: rgb(250, 106, 39);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-top: 100px;
+      }
+      main {
+  flex: 1 0 auto;
+}
+footer {
+  background-color: black;
+  padding: 0;
+  
+  
+}
+#content {
+  padding: 0;
+  margin-left: 20px;
+  
+}
+.white-text {
+  color: rgb(250, 106, 39);
+}
+.footli {
+  list-style-type: none;
+}
+.footli a {
+  text-decoration: none;
+  color: rgb(250, 106, 39);
+}
+@media screen and (max-width: 600px) {
+  #content {
+    margin-left: 20px;
+  }
+}
+h3{
+  margin-top: 80px;
+  margin-left: 35%;
+  font-family: 'Sofia';
+  color: rgb(250, 106, 39);
+}
+@media screen and (max-width: 600px){
+  h3{
+    margin-left: 8%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="/" id="wbnm">///Ganit</a>
+      <a href="/#bannn">Home</a>
+      <a href="/#abt">About</a>
+      <a href="/#tm">Faculty</a>
+      <a href="/#ban2">Team</a>
+
+      <a href="/cour">Courses</a>
+      <a href="#about">Result</a>
+
+      <a href="/lg" style="float: right;">Login</a>
+      <a href="/sgn" style="float: right;">Signup</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  <h3>This will submit your request to us </h3>
+    <div>
+      <div class="container">
+        <form action="">
+          <label for="fname">Full Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fullname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Contact Number</label>
+          <input
+            type="text"
+            id="contact"
+            name="Contact Number"
+            placeholder="Your contact number.."
+          />
+
+          <label for="country">class </label>
+          <select id="country" name="country">
+            <option value="11th">11th</option>
+            <option value="12th">12th</option>
+            <option value="12th pass">12th pass</option>
+          </select>
+
+          <label for="say">want to say something</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height:200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <footer class="page-footer">
+        <div class="contain" id="content">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text" style="color: rgb(250, 106, 39);"><h4 style="color: rgb(250, 106, 39);" >Ganit</h4> <br/><h5 style="color:rgb(250, 106, 39);">An Institute of Mathematics</h5></h5>
+              <p class="grey-text text-lighten-4"style="color: rgb(250, 106, 39);">70/1,Kailash Tower,Near Miss Hill School,Padav, MLB Colony,Lashkar,Gwalior, (M.P.)</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text" style="color: rgb(250, 106, 39);">Links</h5>
+              <ul class="footli"><a class="grey-text text-lighten-3" href="https://www.facebook.com/ganitinstitute/">Our facebook page</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.google.com/gmail/">ganitinstituteformathematics@gmail.com</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">7415545514, 6263679193, 9826558350</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-copyright">
+          <div class="contain">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#">More Links</a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+  
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+  </body>
+</html>
